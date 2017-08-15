@@ -23,17 +23,17 @@ Uses Tensorflow library for the DNN model.
 #Set ENV_NAME in OpenAI_Bot_CartPoleExample.py:15 to the name of environment to learn
 ENV_NAME = 'CartPole-v1'  
 
+#Uncomment OpenAI_Bot_CartPoleExample.py:118 if you want to render the game environment 
+#as the model is playing it (after being trained)
+env.render() #Renders the environment to see what is happening.  
+
 #Comment OpenAI_Bot_CartPoleExample.py:172 if you don't want to test if the
 #environment is the correct one and if it's working properly
 playGamesWithRandomActions()  
 
 #Uncomment OpenAI_Bot_CartPoleExample.py:173 when you wish to train the neural
 #network and run it
-modelTrainAndPlay()  
-
-#Uncomment OpenAI_Bot_CartPoleExample.py:118 if you want to render the game environment 
-#as the model is playing it (after being trained)
-env.render() #Renders the environment to see what is happening.
+modelTrainAndPlay()
 ```
 
 ```bash
