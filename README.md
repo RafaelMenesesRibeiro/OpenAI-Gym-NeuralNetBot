@@ -10,7 +10,7 @@ Uses Tensorflow library for the DNN model.
 * Adds the new game data to the training data.
 * Saves it so the next time it runs it can learn from more and better data.
 
-![screenshot](https://raw.githubusercontent.com/RafaelRibeiro97/OpenAI-Gym-NeuralNetBot/master/media/modelPlaying.PNG)
+![screenshot](https://raw.githubusercontent.com/RafaelRibeiro97/OpenAI-Gym-NeuralNetBot/master/media/modelDone.PNG)
 
 
 ## Requirements
@@ -44,4 +44,4 @@ modelTrainAndPlay()
 $ python OpenAI_Bot_CartPoleExample.py
 ```
 
-![screenshot](https://raw.githubusercontent.com/RafaelRibeiro97/OpenAI-Gym-NeuralNetBot/master/media/modelDone.PNG)
+![screenshot](https://raw.githubusercontent.com/RafaelRibeiro97/OpenAI-Gym-NeuralNetBot/master/media/modelPlaying.PNG)
