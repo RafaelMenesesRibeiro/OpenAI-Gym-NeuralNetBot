@@ -158,7 +158,6 @@ def modelTrainAndPlay():
 			output[data[1]] = 1
 			#Appends [observation, action] to trainingData
 			newTrainingData.append([data[0], output])
-		print('Finished game #.', i+1) #Statistical purposes.
 	np.save(TRAIN_DATA_NAME, np.array(newTrainingData))
 	print('Played {} games. Averaged {} points.'.\
 		format(modelPlayNumber, totalScores / modelPlayNumber))
