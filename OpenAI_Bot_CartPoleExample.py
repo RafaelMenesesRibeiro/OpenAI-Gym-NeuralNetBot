@@ -62,7 +62,7 @@ def createInitialPopulation():
 			- Done - if the game is over
 			- Info - other related information
 			'''
-			prevObservation, reward, done, _ = env.step(action)
+			prevObservation, reward, done, info = env.step(action)
 			score += reward
 			if done: break #If the game is over stop taking actions.
 		totalScores += score
@@ -73,8 +73,7 @@ def createInitialPopulation():
 			for data in gameMemory:
 				output = [0] * envActionsPossibleNum
 				output[data[1]] = 1
-				#Appends [observation, action] to trainingData
-				trainingData.append([data[0], output]) 
+				trainingData.append([data[0], output]) #Appends [observation, action] to trainingData
 	print('Played {} training games. Averaged {} points. Accepted {} training games'.\
 		format(gamesToTrain, totalScores / gamesToTrain, acceptedGames)) #Statistical purposes.
 	#Saves the processed training data to save time when retraining (with the same data).
