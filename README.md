@@ -29,7 +29,11 @@ playGamesWithRandomActions()
 
 #Uncomment OpenAI_Bot_CartPoleExample.py:173 when you wish to train the neural
 #network and run it
-modelTrainAndPlay()
+modelTrainAndPlay()  
+
+#Uncomment OpenAI_Bot_CartPoleExample.py:118 if you want to render the game environment 
+#as the model is playing it (after being trained)
+env.render() #Renders the environment to see what is happening.
 ```
 
 ```bash
